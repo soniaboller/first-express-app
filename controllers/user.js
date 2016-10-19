@@ -20,5 +20,17 @@ ctrl.get('/', function(req,res,next){
     res.json(users);
     // res.render('view', {})
 });
+ctrl.get('/1', function(req,res,next){
+    res.json(users[0]);
+    // res.render('view', {})
+});
+ctrl.get('/2', function(req,res,next){
+    res.json(users[1]);
+    // res.render('view', {})
+});
+ctrl.get('/3', function(req,res,next){
+    res.json(users[2]);
+    // res.render('view', {})
+});
 
 module.exports = ctrl;
